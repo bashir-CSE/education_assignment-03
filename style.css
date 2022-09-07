@@ -1,22 +1,14 @@
 #carouselExampleControls.carousel.slide {
-  display: none;
   position: relative;
 }
 #carouselExampleControls.carousel.slide .hero_content {
-  position: absolute;
   top: 50%;
   left: 50%;
-  background-color: rgba(0, 0, 0, 0.3294117647);
+  background-color: rgba(29, 29, 29, 0.6039215686);
   height: 100%;
   z-index: 1;
   transform: translate(-50%, -50%);
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#carouselExampleControls.carousel.slide .hero_content h1 {
-  color: red;
 }
 #carouselExampleControls.carousel.slide .carousel-inner .carousel-item {
   height: 90vh;
@@ -30,14 +22,42 @@ div.container.d-none.d-md-block.companies.my-5.py-3 div.d-flex.justify-content-b
 }
 
 @media only screen and (max-width: 576px) {
+  #carouselExampleControls.carousel.slide .hero_content h1 {
+    font-size: 30px;
+  }
+  #carouselExampleControls.carousel.slide .hero_content p {
+    font-size: 15px;
+  }
+  #carouselExampleControls.carousel.slide .carousel-inner .carousel-item {
+    height: 35vh;
+  }
+  #carouselExampleControls.carousel.slide .carousel-inner .carousel-item img.img-fluid.d-block.w-100 {
+    height: 100% !important;
+  }
   .container.my-5 .row.row-cols-md-1.row-cols-lg-2.row-cols-sm-1.g-4 .col .card.mb-3 .row.g-0 .col-md-4 img {
     width: 100% !important;
+  }
+  div.container.register_section.h-50.bg-info.d-flex.justify-content-between.align-items-center.rounded.my-5.p-5 {
+    text-align: center;
+    text-transform: capitalize;
+    flex-direction: column;
   }
   div.container div#accordionExample.accordion {
     width: 100% !important;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 800px) {
+  #carouselExampleControls.carousel.slide .carousel-inner .carousel-item {
+    height: 40vh;
+  }
+  #carouselExampleControls.carousel.slide .carousel-inner .carousel-item img.img-fluid.d-block.w-100 {
+    height: 100% !important;
+  }
+  div.container.register_section.h-50.bg-info.d-flex.justify-content-between.align-items-center.rounded.my-5.p-5 {
+    text-align: center;
+    text-transform: capitalize;
+    flex-direction: column;
+  }
   div#accordionExample.accordion {
     width: 100% !important;
   }
